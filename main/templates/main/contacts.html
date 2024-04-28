@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css %}
+     <link rel="stylesheet" href="{% static 'deps/css/my_footer_css.css' %}">
+{% endblock %}
+
+{% block modal_cart %}
+{% include 'includes/cart_button.html' %}
+{% endblock %}
+
+{% block content %}
+<div class="mt-5 pt bg-white custom-shadow rounded">
+    <h3 class="mt-5 pt-5" style="margin-left: 50px;"><strong>{{ content }}</strong></h3>
+<!--    <p class="m-2">{{ text_on_page }}</p>-->
+    <address style="margin-left: 50px;">
+  <a href="mailto:Zmiienko.Denys@gmail.com">Zmiienko.Denys@gmail.com</a><br />
+  <a href="tel:+380962278086">+38 (096) 227‑80-86</a><br />
+    </address>
+        <br />
+    <table width="100%"  cellspacing="15" cellpadding="15">
+   <tr>
+    <td width="50%" valign="top"><h3>Наш адресс:</h3><br />
+     "HOUSEHOLDS"<br />
+        51200<br />
+        улица Гетьманская<br />
+        город Новомосковск<br />
+        Днепропетровская область<br />
+        Украина<br />
+        <br />
+
+    </td>
+       <td valign="top"><h3>Реквизиты для оплаты</h3><br />
+           IBAN: UA393287040000026002054312944 в АТ КБ "ПРИВАТБАНК" (МФО 328704)<br />
+           ЕГРПОУ: 38935167<br />
+           ИНН: 389351615535<br />
+           Св-во НДС: 200149913<br />
+
+
+
+       </td>
+   </tr>
+  </table>
+</div>
+{% endblock %}
+
+{% block footer %}
+    <footer class="py-4 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Home DENY Studio 2024</p>
+        </div>
+    </footer>
+{% endblock %}
